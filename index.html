@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institution Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"> <!-- Favicon link -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo added here -->
+            <img src="images/logo.png" alt="Institution Logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero parallax" data-speed="0.5" id="hero">
+        <img src="images/hero-image.jpg" alt="Hero Background">
+        <div class="overlay"></div>
+        <div class="hero-text">
+            <h1>Indian Computer Academy</h1>
+            <h2>Welcome to Our Institution</h2>
+            
+            <p>Empowering the Future with Knowledge</p>
+            <div class="hero-subtext">
+                <h2>Develop Your Skills</h2>
+                <p>Come Join Now!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services parallax" data-speed="0.5" id="services">
+        <img src="images/services-image.jpg" alt="Services Background">
+        <div class="overlay"></div>
+        <div class="services-text">
+            <h2>Our Services</h2>
+            <p>Offering a range of services to support your learning journey.</p>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <h2>Courses Offered</h2>
+        <button class="tablink" onclick="openTab(event, 'Analytics')">Analytics and Automation Tools</button>
+        <button class="tablink" onclick="openTab(event, 'Programming')">Programming Languages</button>
+        <button class="tablink" onclick="openTab(event, 'Accounting')">Accounting Packages</button>
+        <button class="tablink" onclick="openTab(event, 'LongTerm')">Long term, Short term and other courses</button>
+
+        <div id="Analytics" class="tabcontent"></div>
+        <div id="Programming" class="tabcontent"></div>
+        <div id="Accounting" class="tabcontent"></div>
+        <div id="LongTerm" class="tabcontent"></div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact parallax" data-speed="0.5" id="contact">
+        <img src="images/contact-image.jpg" alt="Contact Background">
+        <div class="overlay"></div>
+        <div class="contact-text">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you.<br>Reach out for any queries or support.<br><br>
+                Call: +91 8078067246|+91 8848285956  <br>
+                Or +91 474 2531297<br>
+                e-Mail:  icaadmin@icanets.in<br>
+                Indian Computer Academy, Kottiyam PO, Kollam, Kerala<br>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Institution Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "Analytics": [
+        ["Data Entry and Console Operation", "File Management", "Word Processing", "Spreadsheet Management", "Database Management", "Presentation Graphics"],
+        ["Data Visualization", "Internet and E-Governance", "Network Infrastructure", "Smart Data Analytics", "Data Science", "Cloud Computing"]
+    ],
+    "Programming": [
+        ["C", "C++", "C#", "VS-IDE", "Java", "Python"],
+        ["Javascript", "PHP", ".NET", "ASP.NET", "R", "Oracle SQL"],
+        ["PL SQL", "MySQL"]
+    ],
+    "Accounting": [
+        ["Tally Prime", "TallyGST ERP 9"],
+        ["Accounts & GST Practitioner", "Foreign Accounting"]
+    ],
+    "LongTerm": [
+        ["PGDCA", "PGDSM", "DCA", "DCFM", "CIFA", "DIM"],
+        ["CDECO", "Web Designing", "DTP", "Computer Teachers Training"],
+        ["CAD", "Hardware and Network Engg.", "Malayalam Computing"]
+    ]
+}

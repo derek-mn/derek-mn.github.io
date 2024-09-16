@@ -1,0 +1,265 @@
+/* General Styles */
+body, h1, h2, p, ul, table {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light Gray Background */
+    color: #333333; /* Dark Gray Text */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styles */
+header {
+    background: #fff; /* White Background for Header */
+    color: #333; /* Dark Gray Text */
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd; /* Light gray border for separation */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between logo and nav */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    max-height: 50px; /* Adjust based on your logo size */
+}
+
+nav {
+    margin-left: auto; /* Push the nav to the right */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #333; /* Dark Gray Text Color for readability on white background */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #3498db; /* Cool Blue Background on Hover */
+    color: #fff; /* White Text Color on Hover for contrast */
+}
+
+/* Parallax Background */
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px; /* Increased height */
+    color: #fff;
+}
+
+.parallax img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Darken image for overlay */
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+}
+
+/* Hero Section Styles */
+.hero-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    width: 100%; /* Full width */
+    color: #fff; /* Text color for contrast */
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem; /* Large font size */
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+.hero-text p {
+    font-size: 1.2rem; /* Slightly larger font size for subheading */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+.hero-subtext {
+    margin-top: 1rem;
+}
+
+.hero-subtext h2 {
+    font-size: 2rem; /* Slightly smaller but prominent */
+    margin-bottom: 0.5rem;
+    color: #fff; /* White color for emphasis */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+.hero-subtext p {
+    font-size: 1.5rem; /* Larger font size for call-to-action */
+    color: #f39c12; /* Warm Yellow for emphasis */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+/* Services Section Styles */
+.services .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+}
+
+.services-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    width: 100%; /* Full width */
+    color: #fff; /* Text color for contrast */
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.services-text h2 {
+    font-size: 2rem; /* Large font size for heading */
+    margin-bottom: 0.5rem;
+}
+
+.services-text p {
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+}
+
+/* Courses Section Styles */
+.courses {
+    background: #fff; /* White Background */
+    padding: 2rem 1rem; /* Padding around section */
+    text-align: center; /* Center-align text */
+}
+
+.courses h2 {
+    margin-bottom: 1rem;
+    color: #3498db; /* Cool Blue */
+}
+
+.tablink {
+    background-color: #3498db; /* Cool Blue */
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0.5rem 0;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.tablink:hover {
+    background-color: #2980b9; /* Darker Blue Hover */
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: none;
+}
+
+.courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align grid */
+    gap: 1rem;
+}
+
+.course-column {
+    flex: 1;
+    min-width: calc(33.333% - 1rem); /* Adjusting for gap */
+    box-sizing: border-box;
+}
+
+.course-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-column ul li {
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contact Section Styles */
+.contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+}
+
+.contact-text {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the text */
+    width: 100%; /* Full width */
+    color: #333; /* Darker Text Color */
+    text-align: center;
+    padding: 20px 0; /* Vertical padding */
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for readability */
+}
+
+.contact-text h2 {
+    font-size: 2rem; /* Large font size for heading */
+    margin-bottom: 0.5rem;
+}
+
+.contact-text p {
+    font-size: 1.2rem; /* Slightly larger font size for paragraph */
+}
+
+/* Footer Styles */
+footer {
+    background: #333; /* Dark Gray Background */
+    color: #fff; /* White Text for readability */
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #444; /* Slightly lighter border for separation */
+}
